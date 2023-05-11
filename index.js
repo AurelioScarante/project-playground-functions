@@ -1,19 +1,24 @@
-// 1 - Usando o operador &&
-// JavaScript possui um operador lógico &&, o qual recebe dois valores e retorna true se ambos os valores são verdadeiros, e retorna false se algum dos valores não o for.
+// Requisito - 1
 
-// Considerando isso, crie uma função chamada compareTrue que, ao receber dois booleanos:
-
-// Retorne true se ambos os valores são verdadeiros;
-// Retorne false se um ou ambos os parâmetros são falsos.
-// Faça a função de operador &&.
-let value1 = 25;
-let value2 = '25';
-function compareTrue(value1 , value2) {
-    if ((value1 === true) && (value2 === true)) {
+function compareTrue() {
+    const a = 22;
+    const b = 18;
+    if (a >= 18 && b >= 18) {
         return true
     } else {
         return false
     }
 }
+console.log(compareTrue())
 
-console.log(compareTrue());
+//Requisito - 2
+const base = 2;
+const height = 4;
+function calcArea(base , height) {
+  const area = (base * height) / 2
+  return area
+}
+
+console.log(calcArea);
+
+console.log(a > 0 && b > 0);
