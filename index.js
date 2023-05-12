@@ -48,3 +48,22 @@ function concatName() {
 }
 
 console.log(concatName());
+
+// Requisito - 5
+
+//**5 - Pontos no futebol**
+
+//Escreva uma função com o nome `footballPoints` que receba o número de vitórias (esse parâmetro deverá se chamar `wins`) e o número de empates (esse parâmetro deverá se chamar `ties`) e retorne a quantidade de pontos que o time marcou em um campeonato.
+
+//Para tanto, considere que cada vitória vale 3 pontos e cada empate vale 1 ponto.
+
+function footballpoints(wins,ties) {
+    var wins = 10;
+    var ties = 5;
+
+    var totalPoints = wins * 3 + ties;
+
+    return totalPoints;
+}
+
+console.log(footballpoints());
