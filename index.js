@@ -21,3 +21,14 @@ function calcArea() {
 }
 
 console.log(calcArea());
+
+// Requisito - 3
+
+function splitSentence() {
+    var strg1 = "Go Trybe";
+    var result = strg1.split(" ", 2);
+
+    return result 
+}
+
+console.log(splitSentence())
