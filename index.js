@@ -31,4 +31,20 @@ function splitSentence() {
     return result 
 }
 
-console.log(splitSentence())
+console.log(splitSentence());
+
+//Concatenação de strings**
+
+//Escreva uma função com o nome `concatName` que, ao receber uma array de strings, retorne uma string com o formato `'ÚLTIMO ITEM, PRIMEIRO ITEM'`, independente do tamanho da array.
+
+//Isso quer dizer que, caso o parâmetro passado para `concatName` seja a Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], a função deverá retornar `Paolillo, Lucas`.
+
+Requisito - 4
+function concatName() {
+    var arrayString = [ 'Aurelio', 'Anelise', 'Millena', 'Júlia', 'Lorenzo' ];
+    var result =(arrayString [4] + ", " + arrayString [0]);
+
+    return result;
+}
+
+console.log(concatName());
