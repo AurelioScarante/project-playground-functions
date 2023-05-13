@@ -51,12 +51,6 @@ console.log(concatName());
 
 // Requisito - 5
 
-//**5 - Pontos no futebol**
-
-//Escreva uma função com o nome `footballPoints` que receba o número de vitórias (esse parâmetro deverá se chamar `wins`) e o número de empates (esse parâmetro deverá se chamar `ties`) e retorne a quantidade de pontos que o time marcou em um campeonato.
-
-//Para tanto, considere que cada vitória vale 3 pontos e cada empate vale 1 ponto.
-
 function footballpoints(wins,ties) {
     var wins = 10;
     var ties = 5;
@@ -67,3 +61,28 @@ function footballpoints(wins,ties) {
 }
 
 console.log(footballpoints());
+
+// Requisito - 6
+
+function highestCount(numberList) {
+    var numberList = [9, 1, 2, 3, 9, 5, 9, 7, 9, 6, 8, 9,];
+    var repeatedNumber = 0;
+    var highestNumber = numberList[0];
+
+    for (i in numberList) {
+        if (numberList[i] > highestNumber) {
+            highestNumber = numberList[i];
+        }
+    }
+
+    for (i in numberList) {
+        if(numberList[i] === highestNumber) {
+            repeatedNumber += 1;
+        }
+    }
+
+    return repeatedNumber;
+
+}
+
+console.log(highestCount());
