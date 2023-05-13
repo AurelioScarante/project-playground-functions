@@ -33,13 +33,8 @@ function splitSentence() {
 
 console.log(splitSentence());
 
-//Concatenação de strings**
+// Requisito - 4
 
-//Escreva uma função com o nome `concatName` que, ao receber uma array de strings, retorne uma string com o formato `'ÚLTIMO ITEM, PRIMEIRO ITEM'`, independente do tamanho da array.
-
-//Isso quer dizer que, caso o parâmetro passado para `concatName` seja a Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], a função deverá retornar `Paolillo, Lucas`.
-
-Requisito - 4
 function concatName() {
     var arrayString = [ 'Aurelio', 'Anelise', 'Millena', 'Júlia', 'Lorenzo' ];
     var result =(arrayString [4] + ", " + arrayString [0]);
@@ -86,3 +81,25 @@ function highestCount(numberList) {
 }
 
 console.log(highestCount());
+
+// Requisito - 7
+
+function catAndMouse() {
+    var mouse = 10;
+    var cat1 = 4;
+    var cat2 = 6;
+    var distânciaCat1 = mouse - cat1;
+    var distânciaCat2 = mouse - cat2;
+
+    if ( distânciaCat1 === distânciaCat2) {
+        return "os gatos trombam e o rato foge"
+    } 
+    else if (distânciaCat2 < distânciaCat1) {
+        return "cat2"
+    }
+    else {
+        return "cat1"
+    }
+}
+
+console.log(catAndMouse());
