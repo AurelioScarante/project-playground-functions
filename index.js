@@ -103,3 +103,25 @@ function catAndMouse() {
 }
 
 console.log(catAndMouse());
+
+// Requisito - 8
+
+function fizzBuzz() {
+    var numberList = [2, 15, 7, 9, 45];
+    var response = [];
+    for (let i = 0; i < numberList.length; i +=1) {
+        if ((numberList[i]  % 5 === 0) && ( numberList[i] % 3 === 0)) {
+            console.log(i)
+            response.push("fizzbuzz");
+        } else if (numberList[i] % 3 === 0) {
+            console.log(i)
+            response.push("fizz")
+        } else if (numberList[i]  % 5 === 0) {
+            console.log(i)
+            response.push("buzz");
+        } else { console.log(i), response.push("bug!")}
+    }
+    return response;
+}
+
+console.log(fizzBuzz());
